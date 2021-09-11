@@ -10,7 +10,7 @@
 import XCTest
 
 class TrueOrFalseTest: XCTestCase {
-    var question:TrueOrFalse!
+    var question:Question!
     var trialText:String!
     
     override func setUp() {

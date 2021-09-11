@@ -17,7 +17,7 @@ import XCTest
 
 class MultipleChoiceTest: XCTestCase {
     
-    var question:MultipleChoice!
+    var question:Question!
     var trialText:String!
     
     override func setUp() {
