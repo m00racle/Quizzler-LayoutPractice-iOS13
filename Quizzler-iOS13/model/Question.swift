@@ -21,4 +21,3 @@ protocol Question {
     
     func getChoices() -> [String]
 }
-
