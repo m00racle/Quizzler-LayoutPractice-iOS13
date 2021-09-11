@@ -8,3 +8,21 @@
 //
 
 import Foundation
+
+class Question {
+    private var questionText: String
+    private var answer: String
+    
+    init(q:String, a:String) {
+        self.questionText = q
+        self.answer = a
+    }
+    
+    func checksOut(a:String) -> Bool {
+        return a == self.answer
+    }
+    
+    func getQuestion() -> String {
+        return self.questionText
+    }
+}
