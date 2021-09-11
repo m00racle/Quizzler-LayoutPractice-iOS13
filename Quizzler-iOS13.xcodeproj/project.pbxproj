@@ -10,7 +10,6 @@
 		7656B4DD26EC3CEA009AE447 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7656B4DC26EC3CEA009AE447 /* Question.swift */; };
 		7656B4DF26EC3D47009AE447 /* TrueFalseList_eng.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7656B4DE26EC3D47009AE447 /* TrueFalseList_eng.swift */; };
 		7656B4E126EC3DCE009AE447 /* MultipleChoiceList_eng.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7656B4E026EC3DCE009AE447 /* MultipleChoiceList_eng.swift */; };
-		7656B4EB26EC3F07009AE447 /* Quizzler_iOS13Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7656B4EA26EC3F07009AE447 /* Quizzler_iOS13Tests.swift */; };
 		7656B4F326EC4070009AE447 /* QuestionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7656B4F226EC4070009AE447 /* QuestionTest.swift */; };
 		7656B4F526EC7C95009AE447 /* TrueOrFalseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7656B4F426EC7C95009AE447 /* TrueOrFalseTest.swift */; };
 		7656B4F726EC7CC9009AE447 /* TrueOrFalse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7656B4F626EC7CC9009AE447 /* TrueOrFalse.swift */; };
@@ -38,7 +37,6 @@
 		7656B4DE26EC3D47009AE447 /* TrueFalseList_eng.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrueFalseList_eng.swift; sourceTree = "<group>"; };
 		7656B4E026EC3DCE009AE447 /* MultipleChoiceList_eng.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleChoiceList_eng.swift; sourceTree = "<group>"; };
 		7656B4E826EC3F07009AE447 /* Quizzler-iOS13Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Quizzler-iOS13Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7656B4EA26EC3F07009AE447 /* Quizzler_iOS13Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quizzler_iOS13Tests.swift; sourceTree = "<group>"; };
 		7656B4EC26EC3F07009AE447 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7656B4F226EC4070009AE447 /* QuestionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTest.swift; sourceTree = "<group>"; };
 		7656B4F426EC7C95009AE447 /* TrueOrFalseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrueOrFalseTest.swift; sourceTree = "<group>"; };
@@ -109,7 +107,6 @@
 		7656B4E926EC3F07009AE447 /* Quizzler-iOS13Tests */ = {
 			isa = PBXGroup;
 			children = (
-				7656B4EA26EC3F07009AE447 /* Quizzler_iOS13Tests.swift */,
 				7656B4F226EC4070009AE447 /* QuestionTest.swift */,
 				7656B4F426EC7C95009AE447 /* TrueOrFalseTest.swift */,
 				7656B4EC26EC3F07009AE447 /* Info.plist */,
@@ -254,7 +251,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7656B4EB26EC3F07009AE447 /* Quizzler_iOS13Tests.swift in Sources */,
 				7656B4F326EC4070009AE447 /* QuestionTest.swift in Sources */,
 				7656B4F526EC7C95009AE447 /* TrueOrFalseTest.swift in Sources */,
 			);
