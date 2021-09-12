@@ -9,6 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
+//    the Quiz Host enter the game
+    var host:QuizHost = QuizBot(pool: Questions_Eng().pool)
+    
     
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var quizScreen: UILabel!
@@ -19,9 +22,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var botButton: UIButton!
     
     @IBAction func buttonPressed(_ sender: UIButton) {
+//        check out user response
+        if host.checksOut(response: sender.currentTitle!) {
+            sender.backgroundColor = UIColor.green
+        } else {
+            sender.backgroundColor = UIColor.red
+        }
+//        host move to the next round
+        host.nextRound()
+//        add delays for the color effect to take place
+        _ = Timer.scheduledTimer(withTimeInterval: 0.2, repeats: false, block: {_ in self.updateUI()})
     }
     
-    let host:QuizHost = QuizBot(pool: Questions_Eng().pool)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +45,9 @@ class ViewController: UIViewController {
 //        update the UI
         scoreLabel.text = "score: " + host.showScore()
         quizScreen.text = host.ask()
+        progressBar.progress = Float(host.round + 1)/Float(host.pool.count)
+//        NOTE: host.round + 1 => because round starts from 0 while progress should starts from 1!
+//        update the buttons area
         topButton.backgroundColor = UIColor.clear
         midButton.backgroundColor = UIColor.clear
         botButton.backgroundColor = UIColor.clear
