@@ -26,3 +26,24 @@ protocol QuizHost {
     mutating func nextRound()
     
 }
+
+struct QuizBot : QuizHost {
+    var pool: [Question]
+    
+    var round: Int = 0
+    
+    var score: Int = 0
+    
+    func ask() -> String {
+        return ""
+    }
+    
+    mutating func checksOut(response: String) -> Bool {
+        return false
+    }
+    
+    mutating func nextRound() {
+//        code
+    }
+    
+}
