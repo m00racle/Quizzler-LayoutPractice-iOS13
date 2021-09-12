@@ -24,20 +24,16 @@ class TrueOrFalseTest: XCTestCase {
         super.tearDown()
     }
     
-    func test_wrong_answer_checksOut_false() {
-        XCTAssertEqual(question.checksOut(a:"False"), false)
-    }
-    
-    func test_correct_answer_cheksOut_true() {
-        XCTAssertEqual(question.checksOut(a:"True"), true)
-    }
-    
     func test_get_question() {
-        XCTAssertEqual(question.getQuestion(), trialText)
+        XCTAssertEqual(question.questionText, trialText)
+    }
+    
+    func test_get_the_correct_answer() {
+        XCTAssertEqual(question.answer, "True")
     }
     
     func test_getChoice_returns_True_and_False() {
-        XCTAssertEqual(question.getChoices(), ["True", "False"])
+        XCTAssertEqual(question.choices, ["True", "False"])
     }
     
 }

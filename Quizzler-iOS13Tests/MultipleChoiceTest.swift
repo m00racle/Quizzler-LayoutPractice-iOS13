@@ -31,20 +31,16 @@ class MultipleChoiceTest: XCTestCase {
         super.tearDown()
     }
     
-    func test_wrong_answer_checksOut_false() {
-        XCTAssertEqual(question.checksOut(a:"Indonesia"), false)
-    }
-    
-    func test_correct_answer_cheksOut_true() {
-        XCTAssertEqual(question.checksOut(a:"Australia"), true)
-    }
-    
     func test_get_question() {
-        XCTAssertEqual(question.getQuestion(), "Where is Tasmania located?")
+        XCTAssertEqual(question.questionText, "Where is Tasmania located?")
+    }
+    
+    func test_get_the_correct_answer() {
+        XCTAssertEqual(question.answer, "Australia")
     }
     
     func test_getChoice_returns_True_and_False() {
-        XCTAssertEqual(question.getChoices(), ["Indonesia", "Australia", "Scotland"])
+        XCTAssertEqual(question.choices, ["Indonesia", "Australia", "Scotland"])
     }
 
 }

@@ -15,11 +15,6 @@ protocol Question {
     var answer: String { get }
     var choices: [String] { get }
     
-    func checksOut(a:String) -> Bool
-    
-    func getQuestion() -> String
-    
-    func getChoices() -> [String]
 }
 
 //  struct TrueOrFalse implements Question protocol (interface)
@@ -36,18 +31,6 @@ struct TrueOrFalse: Question {
         self.questionText = q
         self.answer = a
         self.choices = ["True", "False"]
-    }
-    
-    func checksOut(a: String) -> Bool {
-        return self.answer == a
-    }
-    
-    func getQuestion() -> String {
-        return self.questionText
-    }
-    
-    func getChoices() -> [String] {
-        return self.choices
     }
     
     
@@ -67,18 +50,6 @@ struct MultipleChoice: Question {
         self.questionText = q
         self.answer = correctAnswer
         self.choices = a
-    }
-    
-    func checksOut(a: String) -> Bool {
-        return self.answer == a
-    }
-    
-    func getQuestion() -> String {
-        return self.questionText
-    }
-    
-    func getChoices() -> [String] {
-        return self.choices
     }
     
     
