@@ -22,10 +22,13 @@ protocol QuizHost {
     
 //    abstract functions
     func ask() -> String
+    func passChoices() -> [String]
     mutating func checksOut(response:String) -> Bool
     mutating func nextRound()
     
 }
+
+//QuizBot is struct implementation of the QuizHost protocol
 
 struct QuizBot : QuizHost {
     var pool: [Question]
@@ -35,15 +38,30 @@ struct QuizBot : QuizHost {
     var score: Int = 0
     
     func ask() -> String {
-        return ""
+        return pool[round].ask
+    }
+    
+    func passChoices() -> [String] {
+        return pool[round].choices
     }
     
     mutating func checksOut(response: String) -> Bool {
-        return false
+        if response == pool[round].answer {
+            score += 1
+            return true
+        } else {
+            return false
+        }
     }
     
     mutating func nextRound() {
 //        code
+        if round + 1 < pool.count {
+            round += 1
+        } else {
+            score = 0
+            round = 0
+        }
     }
     
 }

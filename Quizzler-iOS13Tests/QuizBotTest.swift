@@ -30,6 +30,10 @@ class QuizBotTest: XCTestCase {
         XCTAssertEqual(host.ask(), "Buzz Aldrin's mother's maiden name was 'Moon'.")
     }
     
+    func test_host_pass_the_true_or_false_choices() {
+        XCTAssertEqual(host.passChoices(), ["True", "False"])
+    }
+    
     func test_host_increment_round() {
         let oldRound = host.round
         host.nextRound()
@@ -47,6 +51,11 @@ class QuizBotTest: XCTestCase {
     func test_host_asking_the_right_question_next_round() {
         host.nextRound()
         XCTAssertEqual(host.ask(), "What alcoholic drink is made from molasses?")
+    }
+    
+    func test_host_pass_multiple_choices() {
+        host.nextRound()
+        XCTAssertEqual(host.passChoices(), ["Rum", "Whisky", "Gin"])
     }
     
     func test_host_checksOut_true_or_false_correct() {
