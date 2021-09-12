@@ -10,6 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var quizScreen: UILabel!
+    @IBOutlet weak var progressBar: UIProgressView!
+    
+    @IBOutlet weak var topButton: UIButton!
+    @IBOutlet weak var midButton: UIButton!
+    @IBOutlet weak var botButton: UIButton!
+    
+    @IBAction func buttonPressed(_ sender: Any) {
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

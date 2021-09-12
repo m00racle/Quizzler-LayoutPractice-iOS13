@@ -48,6 +48,9 @@
                                 <state key="normal" title="B" backgroundImage="Rectangle">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="whO-UP-ZJ0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbn-vQ-GyC">
                                 <rect key="frame" x="20" y="746" width="374" height="68"/>
@@ -56,6 +59,9 @@
                                 <state key="normal" title="C" backgroundImage="Rectangle">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V9T-Ba-Mtx"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oVw-Hl-IRe">
                                 <rect key="frame" x="20" y="594" width="374" height="68"/>
@@ -64,6 +70,9 @@
                                 <state key="normal" title="A" backgroundImage="Rectangle">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uus-uB-EAu"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -93,6 +102,14 @@
                             <constraint firstItem="ceM-cz-cga" firstAttribute="leading" secondItem="oVw-Hl-IRe" secondAttribute="leading" id="sUO-q2-NN9"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="botButton" destination="tbn-vQ-GyC" id="X2N-2r-jJm"/>
+                        <outlet property="midButton" destination="ceM-cz-cga" id="tZh-oe-8OB"/>
+                        <outlet property="progressBar" destination="TXm-qh-7Xg" id="zdD-li-ZoE"/>
+                        <outlet property="quizScreen" destination="rSI-li-mhO" id="mkx-wT-M2y"/>
+                        <outlet property="scoreLabel" destination="zzu-Sf-b1c" id="rTw-P6-8Kq"/>
+                        <outlet property="topButton" destination="oVw-Hl-IRe" id="GKB-to-w8w"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
