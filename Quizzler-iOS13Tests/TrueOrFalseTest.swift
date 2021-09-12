@@ -25,7 +25,7 @@ class TrueOrFalseTest: XCTestCase {
     }
     
     func test_get_question() {
-        XCTAssertEqual(question.questionText, trialText)
+        XCTAssertEqual(question.ask, trialText)
     }
     
     func test_get_the_correct_answer() {

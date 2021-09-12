@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		764CF8C126ED832400B31D0D /* Questions_Eng.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764CF8C026ED832400B31D0D /* Questions_Eng.swift */; };
+		764CF8C326ED863500B31D0D /* QuizHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764CF8C226ED863500B31D0D /* QuizHost.swift */; };
 		7656B4DD26EC3CEA009AE447 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7656B4DC26EC3CEA009AE447 /* Question.swift */; };
 		7656B4F526EC7C95009AE447 /* TrueOrFalseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7656B4F426EC7C95009AE447 /* TrueOrFalseTest.swift */; };
 		7656B4FB26EC8ADC009AE447 /* MultipleChoiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7656B4FA26EC8ADC009AE447 /* MultipleChoiceTest.swift */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		764CF8C026ED832400B31D0D /* Questions_Eng.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions_Eng.swift; sourceTree = "<group>"; };
+		764CF8C226ED863500B31D0D /* QuizHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizHost.swift; sourceTree = "<group>"; };
 		7656B4DC26EC3CEA009AE447 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		7656B4E826EC3F07009AE447 /* Quizzler-iOS13Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Quizzler-iOS13Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7656B4EC26EC3F07009AE447 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				7656B4DC26EC3CEA009AE447 /* Question.swift */,
+				764CF8C226ED863500B31D0D /* QuizHost.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			files = (
 				AD4BDE4E22D878BA005BA4CC /* ViewController.swift in Sources */,
 				764CF8C126ED832400B31D0D /* Questions_Eng.swift in Sources */,
+				764CF8C326ED863500B31D0D /* QuizHost.swift in Sources */,
 				7656B4DD26EC3CEA009AE447 /* Question.swift in Sources */,
 				AD4BDE4A22D878BA005BA4CC /* AppDelegate.swift in Sources */,
 				AD4BDE4C22D878BA005BA4CC /* SceneDelegate.swift in Sources */,

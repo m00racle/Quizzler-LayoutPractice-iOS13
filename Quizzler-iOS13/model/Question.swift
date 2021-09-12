@@ -11,7 +11,7 @@
 import Foundation
 
 protocol Question {
-    var questionText: String { get }
+    var ask: String { get }
     var answer: String { get }
     var choices: [String] { get }
     
@@ -21,14 +21,14 @@ protocol Question {
 //  this is model on true or false model question
 
 struct TrueOrFalse: Question {
-    var questionText: String
+    var ask: String
     
     var answer: String
     
     var choices: [String]
     
     init(q:String, a:String) {
-        self.questionText = q
+        self.ask = q
         self.answer = a
         self.choices = ["True", "False"]
     }
@@ -40,14 +40,14 @@ struct TrueOrFalse: Question {
 //  this model the multiple choice type question
 
 struct MultipleChoice: Question {
-    var questionText: String
+    var ask: String
     
     var answer: String
     
     var choices: [String]
     
     init(q:String, a:[String], correctAnswer:String) {
-        self.questionText = q
+        self.ask = q
         self.answer = correctAnswer
         self.choices = a
     }

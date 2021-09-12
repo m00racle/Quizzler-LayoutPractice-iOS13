@@ -32,7 +32,7 @@ class MultipleChoiceTest: XCTestCase {
     }
     
     func test_get_question() {
-        XCTAssertEqual(question.questionText, "Where is Tasmania located?")
+        XCTAssertEqual(question.ask, "Where is Tasmania located?")
     }
     
     func test_get_the_correct_answer() {
