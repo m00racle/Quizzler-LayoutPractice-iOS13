@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var midButton: UIButton!
     @IBOutlet weak var botButton: UIButton!
     
-    @IBAction func buttonPressed(_ sender: Any) {
+    @IBAction func buttonPressed(_ sender: UIButton) {
     }
     
     
