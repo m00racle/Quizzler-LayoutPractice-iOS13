@@ -25,7 +25,7 @@ protocol QuizHost {
     func passChoices() -> [String]
     mutating func checksOut(response:String) -> Bool
     mutating func nextRound()
-    
+    func showScore() -> String
 }
 
 //QuizBot is struct implementation of the QuizHost protocol
@@ -62,6 +62,10 @@ struct QuizBot : QuizHost {
             score = 0
             round = 0
         }
+    }
+    
+    func showScore() -> String {
+        return String(score)
     }
     
 }

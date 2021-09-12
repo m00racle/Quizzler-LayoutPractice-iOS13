@@ -16,8 +16,9 @@ class QuizBotTest: XCTestCase {
 
     override func setUp() {
         super.setUp()
-        host = QuizBot(pool: [TrueOrFalse(q: "Buzz Aldrin's mother's maiden name was 'Moon'.", a: "True"),
-                              MultipleChoice(q: "What alcoholic drink is made from molasses?", a: ["Rum", "Whisky", "Gin"], correctAnswer: "Rum")])
+        let testPool:[Question] = [TrueOrFalse(q: "Buzz Aldrin's mother's maiden name was 'Moon'.", a: "True"),
+                                   MultipleChoice(q: "What alcoholic drink is made from molasses?", a: ["Rum", "Whisky", "Gin"], correctAnswer: "Rum")]
+        host = QuizBot(pool: testPool)
     }
     
     override func tearDown() {
@@ -84,5 +85,9 @@ class QuizBotTest: XCTestCase {
         let oldScore = host.score
         XCTAssertEqual(host.checksOut(response: "Gin"), false)
         XCTAssertEqual(host.score, oldScore)
+    }
+    
+    func test_host_pass_score_as_String_to_display() {
+        XCTAssertEqual(host.showScore(), "0")
     }
 }
